@@ -1,0 +1,229 @@
+/* 
+    Color Scheme:
+    Get your favourite theme here: https://colorhunt.co/ and change all occurrences of below colors
+    
+        #1A1A2E Black
+        #16213E Dark Blue
+        #0F3460 Blue
+        #E94560 Red 
+
+    Fonts:
+    https://fonts.google.com/
+
+    go to google fonts and select one regular and one bold font and replpace the import url
+    change font-family in 
+        html, body
+        ff-jose
+        font-big
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Quicksand&display=swap');
+
+html, body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: url("./assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+     overflow: hidden;
+}
+    
+.ff-jose{
+    font-family: 'Jost', sans-serif ;
+}
+.font-big{
+    font-family: 'Jost', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.bg-dark{
+    background-color:#3A3B3C !important;
+}
+.text-red {
+    color: #F433FF;
+}
+.text-black {
+    color: #3A3B3C;
+}
+.dropdown-item:active {
+    background-color: #3A3B3C !important;
+}
+.active {
+    color: #F433FF !important;
+    background-color:#3A3B3C !important;
+    font-weight: 600;
+    transition: transform 0.2s;
+    transform: scale(1.1);
+}
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes slideInTop {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+@keyframes slideInBottom {
+    0% {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+@keyframes slideInBottomTechnology {
+    0% {
+      transform: translateY(10%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .slide-in-left {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+  }
+  .slide-in-top {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInTop;
+  }
+  .slide-in-bottom {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInBottom;
+  }
+
+/* ===================== Transition ===================== */
+
+.animate-charcter
+{
+  background-image: linear-gradient(-225deg,#ffffff,#F433FF,#F433FF,#ffffff);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ===================== Home ===================== */
+.ls-2{
+    letter-spacing: 2px; 
+ }
+
+/* ===================== Skills ===================== */
+.mw-fc {
+  max-width: fit-content;
+}
+
+/* ===================== Resume ===================== */
+li::marker {
+    color: #F433FF;
+    font-size: 2em;
+}
+.zoom-on-hover:hover {
+    transition: transform 0.2s;
+    transform: scale(1.1);
+}
+
+/* ===================== Portfolio ===================== */
+
+.portfolio-link:hover{
+    background-color: #F433FF;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+.header__ul {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+.header__ul li {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #F433FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.header__ul li:hover {
+  background: #fff;
+  border: 2px solid transparent;
+}
+.header__ul li:hover .headerIcon {
+  color: #F433FF;
+}
+.header__ul li:first-child {
+  margin-left: 0;
+}
+.header__section h1 {
+  font-size: 57px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.header__section p {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  color: black;
+  text-decoration: none;
+}
+.btn-outline {
+  border: 2px solid #F433FF;
+  border-radius: 50px;
+  padding: 13px 40px;
+}
+.img-fluid{
+     margin-top: 180px;
+}
